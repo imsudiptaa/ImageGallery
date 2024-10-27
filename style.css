@@ -1,0 +1,80 @@
+body {
+    background-color: rgba(0, 0, 0, 0.881);
+}
+
+.container {
+    column-count: 5;
+    column-width: 270px;
+    column-gap: 5px;
+    
+}
+
+img {
+    width: 100%;
+}
+.container-item {
+    margin: 0;
+    max-width: 400px;
+    width: 100%;
+
+}
+.main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search {
+    height: 35px;
+    width: 600px;
+    background-color: white;
+    margin-left: 550px;
+    margin-right: 100px; 
+    padding-left: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search input[type="search"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+}
+h1 {
+    color: aliceblue;
+    font-size: 4vw;
+    margin-left: 20px;
+    font-family: "Kablammo", system-ui;
+}
+span {
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    margin-left: 10px; 
+}
+
+@media(max-width: 768px){
+    .container {
+        column-count: 2;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+    span {
+        font-size: 20px;
+    }
+}
+@media(max-width: 480px){
+    .container {
+        column-count: 1;
+    }
+    h1 {
+        font-size: 8vw;
+    }
+    span {
+        font-size: 4vw;
+    }
+}
+
